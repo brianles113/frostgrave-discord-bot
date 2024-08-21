@@ -2,8 +2,7 @@
 Description="Frostgrave Discord Bot"
 
 [Service]
-ExecStart=/root/.nvm/versions/node/v20.17.0/bin/node bot.js
-WorkingDirectory= /projects/frostgrave-discord-bot
+ExecStart= /root/.nvm/versions/node/v20.17.0/bin/node /home/projects/frostgrave-discord-bot/bot.js
 Restart=always
 RestartSec=10
 StandardOutput=syslog
