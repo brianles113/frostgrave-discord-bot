@@ -9,3 +9,6 @@ RestartSec=10
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=Frostgrave-discord-bot
+
+[Install]
+WantedBy=multi-user.target
