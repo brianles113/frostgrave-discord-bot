@@ -98,11 +98,7 @@ export default {
     
       
       resp = `Dice Rolls: (${diceRolls})\n${resp}`
-    
-      // TODO: Handle invalid command arguments, such as:
-      // 1. No mention or invalid mention.
-      // 2. No amount or invalid amount.
-    
+
       return msg.createMessage(resp);
     }
   }

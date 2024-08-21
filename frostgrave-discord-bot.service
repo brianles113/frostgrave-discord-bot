@@ -1,0 +1,11 @@
+[Unit]
+Description="Frostgrave Discord Bot"
+
+[Service]
+ExecStart=/root/.nvm/versions/node/v20.17.0/bin/node bot.js
+WorkingDirectory= /projects/frostgrave-discord-bot
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=Frostgrave-discord-bot
