@@ -43,7 +43,7 @@ client.on(Events.InteractionCreate, async interaction => {
 	if (interaction.isChatInputCommand()) {
 
     try {
-      console.log(`Executing ${interaction.commandName}.`)
+      
       if (interaction.isAutocomplete()) {
         await command.autocomplete(interaction);
       }

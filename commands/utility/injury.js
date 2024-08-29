@@ -61,6 +61,7 @@ module.exports = {
       }
       
       responseString += `\n ${rollString})`
+      console.log(responseString)
       await interaction.reply(responseString);
     },
     async autocomplete(interaction) {
