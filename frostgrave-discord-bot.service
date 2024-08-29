@@ -2,12 +2,12 @@
 Description="Frostgrave Discord Bot"
 
 [Service]
-ExecStart= /root/.nvm/versions/node/v20.17.0/bin/node /home/projects/frostgrave-discord-bot/bot.js
+ExecStart=/root/.nvm/versions/node/v20.17.0/bin/node /home/projects/frostgrave-discord-bot/bot.js
 Restart=always
 RestartSec=10
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=Frostgrave-discord-bot
+SyslogIdentifier=frostgrave-discord-bot
 
 [Install]
 WantedBy=multi-user.target

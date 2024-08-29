@@ -28,13 +28,13 @@ export default {
         let potionsString = "Potions: "
         for (let i = 0; i < treasure.amount; i++){
           let rll = roll(0,19)
-          diceRolls += `,${rll}`
+          diceRolls += `,${rll+1}`
           if (rll < 18){
             potionsString += treasureTable["potions"][rll] + ", "
           }else{
             const rll2 = roll(0,9)
             potionsString += treasureTable["greater_potions"][rll] + ", "
-            diceRolls += `,${rll2}`
+            diceRolls += `,${rll2 * 2}`
           }
         }
     

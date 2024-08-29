@@ -1,0 +1,38 @@
+{
+  "1,2":{
+    "injury": "Lost Toes",
+    "description":""    
+  },
+  "3,4,5,6":{
+    "injury": "Smashed Leg",
+    "description":""    
+  },
+  "7,8,9,10":{
+    "injury": "Crushed Arm",
+    "description":""    
+  },
+  "11,12":{
+    "injury": "Lost Fingers",
+    "description":""    
+  },
+  "13,14":{
+    "injury": "Never Quite as Strong",
+    "description":""    
+  },
+  "15,16":{
+    "injury": "Psychological Scars",
+    "description":""    
+  },
+  "17,18":{
+    "injury": "Niggling Injury",
+    "description":""    
+  },
+  "19":{
+    "injury": "Smashed Jaw",
+    "description":""    
+  },
+  "20":{
+    "injury": "Lost Eye",
+    "description":""    
+  }
+}
