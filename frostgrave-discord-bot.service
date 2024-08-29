@@ -1,13 +1,19 @@
 [Unit]
-Description="Frostgrave Discord Bot"
+Description=Frostgrave Discord Bot
+Requires=network.target
+
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
 
 [Service]
-ExecStart=/root/.nvm/versions/node/v20.17.0/bin/node /home/projects/frostgrave-discord-bot/bot.js
+Type=simple
+WorkingDirectory=/home/projects/frostgrave-discord-bot
+ExecStart=/root/.nvm/versions/node/v20.17.0/bin/node--enable-source-maps /opt/ecms/bin/client.mjs
+RestartSec=10s
 Restart=always
-RestartSec=10
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=frostgrave-discord-bot
+User=root
+
 
 [Install]
 WantedBy=multi-user.target
