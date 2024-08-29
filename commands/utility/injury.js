@@ -60,7 +60,7 @@ module.exports = {
         }
       }
       
-      responseString += `\n ${rollString})`
+      responseString += `\n${rollString})`
       console.log(responseString)
       await interaction.reply(responseString);
     },
